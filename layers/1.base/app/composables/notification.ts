@@ -1,12 +1,3 @@
-import { no } from 'vuetify/locale'
-
-export interface Notif {
-  id?: string
-  title: string
-  text: string
-  type: 'error' | 'success' | 'warning' | 'info'
-}
-
 export function useNotification() {
   const appConfig = useAppConfig()
 
