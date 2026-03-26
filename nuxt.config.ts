@@ -8,6 +8,7 @@ export default defineNuxtConfig({
   css: ['~/assets/css/globals.scss'],
   modules: [
     '@pinia/nuxt',
+    'pinia-plugin-persistedstate/nuxt',
     '@vueuse/nuxt',
     'vuetify-nuxt-module',
     '@nuxtjs/emotion',

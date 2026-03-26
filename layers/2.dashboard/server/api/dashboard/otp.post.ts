@@ -18,7 +18,6 @@ export default defineEventHandler(async (event) => {
         roles: true,
         usersprofile: {
           select: {
-            id: true,
             name: true,
             photo_profile: true,
           },
