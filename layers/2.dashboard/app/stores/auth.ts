@@ -11,7 +11,7 @@ const initState: {
   info: null,
 }
 
-export const useAuthStore = defineStore('auth', {
+export const useAuthStoreDashboard = defineStore('auth', {
   state: () => initState,
   getters: {
     getToken: state => state.token,

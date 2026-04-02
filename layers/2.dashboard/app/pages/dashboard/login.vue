@@ -11,7 +11,7 @@ const { show: showNotification } = useNotification()
 const refForm = useTemplateRef('ref-form-login')
 
 const rules = useRules()
-const authStore = useAuthStore()
+const authStore = useAuthStoreDashboard()
 
 const showPass = ref(false)
 const showOtp = ref(false)
@@ -49,7 +49,7 @@ async function onLogin() {
   catch (err: any) {
     showNotification({
       title: 'Error',
-      text: err.statusText,
+      text: err.statusText || err.message,
       type: 'error',
     })
   }

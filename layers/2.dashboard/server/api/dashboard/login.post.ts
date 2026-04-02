@@ -49,8 +49,7 @@ export default defineEventHandler(async (event) => {
     }
 
     const { refreshToken, accessToken } = await jwtAll({
-      email: user.email,
-      id: user.id,
+      user: `${user.email}#${user.id}`,
     }, jwtKey)
 
     setCookie(event, 'refreshToken', refreshToken, {
